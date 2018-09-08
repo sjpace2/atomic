@@ -20,18 +20,16 @@
     height: 75px;
 }
 
-.navbar-right {
-    display: flex;
+.navbar-right { 
+    display: none;
     width: 15px;
     justify-content: space-between;
     padding-right: 38px;
 }
 
-.navbar-menu {
-    display: none;
-    width: 600px;
-    justify-content: space-between;
-    padding-right: 50px;
+.navbar-alpine {
+    width: 33%;
+    color: #EB2449;
 }
 
 .fa-search {
@@ -42,18 +40,82 @@
     font-size: 15px;
 }
 
-.navbar-menu li {
-    display: flex;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 12px;
-    align-items: center;
-}
-
 .navbar-left {
     align-items: center;
     display: flex;
+}   
+
+.navbar-button {
+    display: none;
+    text-transform: uppercase;
+    height: 75px;
+    align-items: center;
 }
+
+.navbar-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-drop-alpine {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-drop-touring {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-drop-nordic {
+    position: relative;
+    display: inline-block;
+}
+.navbar-drop-content {
+    display: none;
+    position: fixed;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100vw;
+    height: 65px;
+    margin-top: 37px;
+    left: 0;
+}
+
+.navbar-drop-alpine-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbar-drop-touring-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbar-drop-nordic-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.navbar-button:hover .navbar-drop-content {display: flex;}
+.navbar-drop-alpine:hover .navbar-drop-alpine-content {display: flex;}
+.navbar-drop-touring:hover .navbar-drop-touring-content {display: flex;}
+.navbar-drop-nordic:hover .navbar-drop-nordic-content {display: flex;}
 
 @media (min-width: 900px){
     .nav-atomic {
@@ -65,11 +127,16 @@
     .navbar-right {
         width: 600px;
         padding-right: 15px;
+        align-items: center;
+        display: flex;
     }
     .navbar {
         background-color: #EB2449;
     }
     .fa-bars {
         display: none;
+    }
+    .navbar-button {
+        display: flex;
     }
 }
