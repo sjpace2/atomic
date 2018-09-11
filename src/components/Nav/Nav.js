@@ -13,7 +13,7 @@ class Nav extends Component {
             </div>
             {/* <div className='navbar-right'> */}
                 
-            <div className='navbar-button'>Men
+            <div className='navbar-button-men'>Men
                 <div className='navbar-dropdown'>
                     <div className='navbar-drop-content'>
                         <div className='navbar-drop-alpine'>
