@@ -67,7 +67,8 @@
   display: flex;
   justify-content: center;
   margin-left: 50px;
-  font-size: 15px; }
+  font-size: 15px;
+  background: white; }
 
 .navbar-drop-touring {
   position: relative;

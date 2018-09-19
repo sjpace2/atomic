@@ -13,13 +13,13 @@ class Nav extends Component {
         return(
         <div className='navbar'> 
             <div className='navbar-left'>
-                <img className='nav-logo' src={justLogo} alt="logo"/>
+                <img className='nav-logo' src={justLogo} alt="logo"/>   
                 <i className="fas fa-bars"></i>
                 <img className='nav-atomic' src={justAtomic} alt="atomic"/>
             </div>
             {/* <div className='navbar-right'> */}
                 
-            <div className='navbar-button-men' onMouseOver={()=>this.changeAlpineBackground('gray')}>Men
+            <div className='navbar-button-men'>Men
                 <div className='navbar-dropdown'>
                     <div className='navbar-drop-content'>
                         <div className='navbar-drop-alpine' id='navbar-alpine-special'>
@@ -38,7 +38,7 @@ class Nav extends Component {
                                 <li>Apparel</li>
                             </div>
                         </div>
-                        <div className='navbar-drop-touring' onMouseOver={()=>this.changeAlpineBackground('green')}>
+                        <div className='navbar-drop-touring' onMouseOver={()=>this.changeAlpineBackground('none')} onMouseLeave={()=>this.changeAlpineBackground('white')}>
                             <div className='navbar-touring'>
                                 Touring
                             </div>
@@ -54,7 +54,7 @@ class Nav extends Component {
                                 <li>Apparel</li>
                             </div>
                         </div>
-                        <div className='navbar-drop-nordic'>
+                        <div className='navbar-drop-nordic' onMouseOver={()=>this.changeAlpineBackground('none')} onMouseLeave={()=>this.changeAlpineBackground('white')}>
                             <div className='navbar-nordic'>
                                 Nordic
                             </div>
