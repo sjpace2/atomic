@@ -67,8 +67,7 @@
   display: flex;
   justify-content: center;
   margin-left: 50px;
-  font-size: 15px;
-  background: white; }
+  font-size: 15px; }
 
 .navbar-drop-touring {
   position: relative;
@@ -103,13 +102,14 @@
   display: none;
   position: fixed;
   left: 0;
-  background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 0;
   margin-top: 69px;
   width: 100vw;
-  height: 331px; }
+  height: 331px;
+  background: gray;
+  z-index: 2; }
 
 .navbar-drop-touring-content {
   display: none;
@@ -121,7 +121,9 @@
   z-index: 1;
   margin-top: 69px;
   width: 100vw;
-  height: 331px; }
+  height: 331px;
+  background: green;
+  z-index: 1; }
 
 .navbar-drop-nordic-content {
   display: none;
@@ -133,10 +135,9 @@
   z-index: 1;
   margin-top: 69px;
   width: 100vw;
-  height: 331px; }
-
-.navbar-button-men:hover .navbar-drop-alpine-content {
-  display: flex; }
+  height: 331px;
+  background: yellow;
+  z-index: 0; }
 
 .navbar-drop-alpine-content:hover {
   display: flex; }
@@ -144,20 +145,25 @@
 .navbar-button-men:hover .navbar-drop-content {
   display: flex; }
 
-.navbar-button:hover .navbar-drop-content {
-  display: flex; }
-
 .navbar-drop-alpine:hover .navbar-drop-alpine-content {
   display: flex; }
 
-.navbar-drop-touring:hover {
+.navbar-drop-alpine:hover {
   background: white; }
+
+.navbar-drop-alpine-content {
+  display: flex; }
+
+.navbar-drop-touring:hover {
+  background: white;
+  z-index: 3; }
 
 .navbar-drop-touring-content {
   display: flex; }
 
 .navbar-drop-nordic:hover {
-  background: white; }
+  background: white;
+  z-index: 4; }
 
 .navbar-drop-nordic-content {
   display: flex; }

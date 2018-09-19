@@ -48,11 +48,11 @@ class Nav extends Component {
                                 <li>Apparel</li>
                             </div>
                         </div>
-                        <div className='navbar-drop-touring'>
+                        <div className='navbar-drop-nordic'>
                             <div className='navbar-nordic'>
                                 Nordic
                             </div>
-                            <div className='navbar-drop-touring-content'>
+                            <div className='navbar-drop-nordic-content'>
                                 <li>Skis</li>
                                 <li>Ski Bindings</li>
                                 <li>Ski Boots</li>

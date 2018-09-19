@@ -76,23 +76,18 @@
 
 .navbar-drop-alpine {
     position: relative;
-    // height: 100%;
     width: 30%;
     display: flex;
     justify-content: center;
-    // align-items: center;
     margin-left: 50px;
     font-size: 15px;
-    background: white;
 }
 
 .navbar-drop-touring {
     position: relative;
-    // height: 100%;
     width: 30%;
     display: flex;
     justify-content: center;
-    // align-items: center;
     font-size: 15px;
     
 }
@@ -130,13 +125,14 @@
     display: none;
     position: fixed;
     left: 0;
-    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 0;
     margin-top: 69px;
     width: 100vw;
     height: 331px;
+    background: gray;
+    z-index: 2;
 }
 
 .navbar-drop-touring-content {
@@ -150,6 +146,8 @@
     margin-top: 69px;
     width: 100vw;
     height: 331px;
+    background: green;
+    z-index: 1;
 }
 
 .navbar-drop-nordic-content {
@@ -163,15 +161,23 @@
     margin-top: 69px;
     width: 100vw;
     height: 331px;
+    background: yellow;
+    z-index: 0;
 }
 
-.navbar-button-men:hover .navbar-drop-alpine-content {display: flex;}
+// .navbar-button-men:hover .navbar-drop-alpine-content {display: flex;}
+
 .navbar-drop-alpine-content:hover {display:flex;}
+
 .navbar-button-men:hover .navbar-drop-content {display: flex;}
-.navbar-button:hover .navbar-drop-content {display: flex;}
+
 .navbar-drop-alpine:hover .navbar-drop-alpine-content {display: flex;}
-.navbar-drop-touring:hover {background: white;} .navbar-drop-touring-content {display: flex;}
-.navbar-drop-nordic:hover {background: white;} .navbar-drop-nordic-content {display: flex;}
+
+.navbar-drop-alpine:hover {background: white;} .navbar-drop-alpine-content {display: flex;}
+.navbar-drop-touring:hover {background: white; z-index: 3;} .navbar-drop-touring-content {display: flex;}
+.navbar-drop-nordic:hover {background: white; z-index: 4;} .navbar-drop-nordic-content {display: flex;}
+
+
 
 @media (min-width: 900px){
     .nav-atomic {
