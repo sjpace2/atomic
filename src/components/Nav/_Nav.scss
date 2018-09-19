@@ -165,13 +165,13 @@
     z-index: 0;
 }
 
-// .navbar-button-men:hover .navbar-drop-alpine-content {display: flex;}
 
 .navbar-drop-alpine-content:hover {display:flex;}
 
-.navbar-button-men:hover .navbar-drop-content {display: flex;}
+.navbar-button-men:hover .navbar-drop-content {display: flex;} 
 
 .navbar-drop-alpine:hover .navbar-drop-alpine-content {display: flex;}
+
 
 .navbar-drop-alpine:hover {background: white;} .navbar-drop-alpine-content {display: flex;}
 .navbar-drop-touring:hover {background: white; z-index: 3;} .navbar-drop-touring-content {display: flex;}

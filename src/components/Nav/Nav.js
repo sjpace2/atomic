@@ -3,6 +3,12 @@ import justAtomic from './../../images/just atomic.png';
 import justLogo from './../../images/just logo.png';
 
 class Nav extends Component {
+
+
+    changeAlpineBackground=(color)=>{
+        document.getElementById('navbar-alpine-special').style.background = color
+    }
+
     render(){
         return(
         <div className='navbar'> 
@@ -13,10 +19,10 @@ class Nav extends Component {
             </div>
             {/* <div className='navbar-right'> */}
                 
-            <div className='navbar-button-men'>Men
+            <div className='navbar-button-men' onMouseOver={()=>this.changeAlpineBackground('gray')}>Men
                 <div className='navbar-dropdown'>
                     <div className='navbar-drop-content'>
-                        <div className='navbar-drop-alpine'>
+                        <div className='navbar-drop-alpine' id='navbar-alpine-special'>
                             <div className='navbar-alpine'>
                                 Alpine
                             </div>
@@ -32,7 +38,7 @@ class Nav extends Component {
                                 <li>Apparel</li>
                             </div>
                         </div>
-                        <div className='navbar-drop-touring'>
+                        <div className='navbar-drop-touring' onMouseOver={()=>this.changeAlpineBackground('green')}>
                             <div className='navbar-touring'>
                                 Touring
                             </div>
