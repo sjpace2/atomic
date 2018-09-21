@@ -93,7 +93,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   width: 100vw;
-  height: 400px;
+  height: 70px;
   margin-top: 37px;
   left: 0;
   justify-content: space-around;
@@ -120,6 +120,14 @@
   justify-content: center;
   display: flex; }
 
+.navbar-drop-touring-content li {
+  justify-content: center;
+  display: flex; }
+
+.navbar-drop-nordic-content {
+  justify-content: center;
+  display: flex; }
+
 .navbar-drop-alpine-content img {
   display: flex;
   align-content: center; }
@@ -131,16 +139,18 @@
   display: none;
   position: fixed;
   left: 0;
-  background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 0;
   margin-top: 69px;
   width: 100vw;
-  height: 331px;
+  height: auto;
   background: white;
   z-index: 1;
-  color: blue; }
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end; }
 
 .navbar-drop-nordic-content {
   display: none;
