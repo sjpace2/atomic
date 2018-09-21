@@ -108,9 +108,24 @@
   z-index: 0;
   margin-top: 69px;
   width: 100vw;
-  height: 331px;
-  background: gray;
-  z-index: 2; }
+  height: auto;
+  background: white;
+  z-index: 2;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end; }
+
+.navbar-drop-alpine-content li {
+  justify-content: center;
+  display: flex; }
+
+.navbar-drop-alpine-content img {
+  display: flex;
+  align-content: center; }
+
+#navbar-goggles {
+  margin-bottom: 25px; }
 
 .navbar-drop-touring-content {
   display: none;
@@ -123,8 +138,9 @@
   margin-top: 69px;
   width: 100vw;
   height: 331px;
-  background: green;
-  z-index: 1; }
+  background: white;
+  z-index: 1;
+  color: blue; }
 
 .navbar-drop-nordic-content {
   display: none;
@@ -137,8 +153,9 @@
   margin-top: 69px;
   width: 100vw;
   height: 331px;
-  background: yellow;
-  z-index: 0; }
+  background: white;
+  z-index: 0;
+  color: green; }
 
 .navbar-drop-alpine-content:hover {
   display: flex; }

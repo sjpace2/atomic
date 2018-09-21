@@ -95,11 +95,9 @@
 
 .navbar-drop-nordic {
     position: relative;
-    // height: 100%;
     width: 30%;
     display: flex;
     justify-content: center;
-    // align-items: center;
     margin-right: 50px;
     font-size: 15px;
     
@@ -131,10 +129,30 @@
     z-index: 0;
     margin-top: 69px;
     width: 100vw;
-    height: 331px;
-    background: gray;
+    height: auto;
+    background: white;
     z-index: 2;
+    list-style: none;
+    flex-wrap: wrap;
+    // align-self: stretch;
+    justify-content: center;
+    align-items: flex-end;
 }
+
+.navbar-drop-alpine-content li {
+    justify-content: center;
+    display: flex;
+}
+
+.navbar-drop-alpine-content img {
+    display: flex;
+    align-content: center;
+}
+
+#navbar-goggles {
+    margin-bottom: 25px;
+}
+
 
 .navbar-drop-touring-content {
     display: none;
@@ -147,8 +165,9 @@
     margin-top: 69px;
     width: 100vw;
     height: 331px;
-    background: green;
+    background: white;
     z-index: 1;
+    color: blue;
 }
 
 .navbar-drop-nordic-content {
@@ -162,8 +181,9 @@
     margin-top: 69px;
     width: 100vw;
     height: 331px;
-    background: yellow;
+    background: white;
     z-index: 0;
+    color: green;
 }
 
 
