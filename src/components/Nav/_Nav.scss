@@ -18,6 +18,8 @@
     background-color: #CB1F3E;
     color: white;   
     height: 75px;
+    font-family: 'Raleway';
+    font-weight: 600;
 }
 
 .navbar-right { 
@@ -28,16 +30,24 @@
 }
 
 .navbar-alpine {
-    width: 33%;
+    color: #333;
     margin-top: 25px;
+    font-family: 'Raleway';
+    font-weight: 600;
 }
 
 .navbar-touring {
+    color: #333;
     margin-top: 25px;
+    font-family: 'Raleway';
+    font-weight: 600px;
 }
 
 .navbar-nordic {
+    color: #333;
     margin-top: 25px;
+    font-family: 'Raleway';
+    font-weight: 600px;
 }
 
 .fa-search {
@@ -138,16 +148,25 @@
 .navbar-drop-alpine-content li {
     justify-content: center;
     display: flex;
+    font-family: 'Raleway';
+    color: #666;
+    font-weight: 600px;
 }
 
 .navbar-drop-touring-content li {
     justify-content: center;
     display: flex;
+    font-family: 'Raleway';
+    font-weight: 600px;
+    color: #666;
 }
 
-.navbar-drop-nordic-content {
+.navbar-drop-nordic-content div li {
     justify-content: center;
     display: flex;
+    font-family: 'Raleway';
+    font-weight: 600px;
+    color: #666;
 }
 
 .navbar-drop-alpine-content img {
@@ -188,12 +207,26 @@
     z-index: 1;
     margin-top: 69px;
     width: 100vw;
-    height: 331px;
+    height: auto;
     background: white;
     z-index: 0;
-    color: green;
+    list-style: none;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 
+.navbar-drop-nordic-content div {
+    margin: 10px;
+}
+
+.navbar-drop-nordic-content img {
+    width: 135px;
+}
+
+.navbar-drop-nordic-content li {
+    font-size: 15px;
+}
 
 .navbar-drop-alpine-content:hover {display:flex;}
 

@@ -8,6 +8,7 @@ class Nav extends Component {
     changeAlpineBackground=(color, display)=>{
         document.getElementById('navbar-alpine-special').style.background = color;
         document.getElementById('navbar-drop-alpine-special').style.display = display;
+        document.getElementById('navbar-drop-nordic-content-special').style.display = 'none'
     }
 
     changeTouringBackground=(color, display)=>{
