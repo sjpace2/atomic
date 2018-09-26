@@ -246,6 +246,9 @@
   .navbar-button-men {
     display: flex; } }
 
+.home-background img {
+  width: 100vw; }
+
 .w-navbar-alpine {
   color: #333;
   margin-top: 25px;
