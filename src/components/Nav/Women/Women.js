@@ -9,8 +9,9 @@ class Women extends Component {
     changeAlpineBackground=(color, display)=>{
         document.getElementById('w-navbar-alpine-special').style.background = color;
         document.getElementById('w-navbar-drop-alpine-special').style.display = display;
-        document.getElementById('w-navbar-drop-nordic-content-special').style.display = 'none'
-       
+        document.getElementById('w-navbar-drop-nordic-content-special').style.display = 'none';
+        document.getElementById('w-navbar-drop-touring-content-special').style.display = 'flex';
+              
     }
 
     changeTouringBackground=(color, display)=>{
@@ -28,7 +29,6 @@ class Women extends Component {
         document.getElementById('w-navbar-alpine-special').style.background = 'white';
         document.getElementById('w-navbar-drop-alpine-special').style.display = 'flex';
     }
-
 
     render(){
         return(
@@ -79,7 +79,7 @@ class Women extends Component {
                         </div>
                     </div>
                     <div className='w-navbar-drop-touring' id='w-navbar-drop-touring-special' onMouseOver={()=>this.changeAlpineBackground('none', 'none')} onMouseLeave={()=>this.changeAlpineBackground('white', 'flex')}>
-                        <div className='w-navbar-touring'>
+                        <div className='w-navbar-touring' >
                             Touring
                         </div>
                         <div className='w-navbar-drop-touring-content' id='w-navbar-drop-touring-content-special'>
