@@ -245,3 +245,212 @@
     display: flex; }
   .navbar-button-men {
     display: flex; } }
+
+.w-navbar-alpine {
+  color: #333;
+  margin-top: 25px;
+  font-family: 'Raleway';
+  font-weight: 600; }
+
+.w-navbar-touring {
+  color: #333;
+  margin-top: 25px;
+  font-family: 'Raleway';
+  font-weight: 600px; }
+
+.w-navbar-nordic {
+  color: #333;
+  margin-top: 25px;
+  font-family: 'Raleway';
+  font-weight: 600px; }
+
+.fa-search {
+  display: flex;
+  color: white;
+  align-items: center;
+  padding-right: 15px;
+  font-size: 15px; }
+
+.w-navbar-left {
+  align-items: center;
+  display: flex; }
+
+.w-navbar-button {
+  display: none;
+  text-transform: uppercase;
+  height: 75px;
+  align-items: center;
+  font-size: 15px; }
+
+.w-navbar-button-women {
+  display: none;
+  text-transform: uppercase;
+  height: 75px;
+  align-items: center;
+  font-size: 15px; }
+
+.w-navbar-dropdown {
+  position: relative;
+  display: inline-block; }
+
+.w-navbar-drop-alpine {
+  position: relative;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  font-size: 15px;
+  background: white; }
+
+.w-navbar-drop-touring {
+  position: relative;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  font-size: 15px; }
+
+.w-navbar-drop-nordic {
+  position: relative;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+  font-size: 15px; }
+
+.w-navbar-drop-content {
+  display: none;
+  position: fixed;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100vw;
+  height: 70px;
+  margin-top: 37px;
+  left: 0;
+  justify-content: space-around;
+  color: black; }
+
+.w-navbar-drop-alpine-content {
+  display: none;
+  position: fixed;
+  left: 0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  margin-top: 69px;
+  width: 100vw;
+  height: auto;
+  background: white;
+  z-index: 2;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end; }
+
+.w-navbar-drop-alpine-content li {
+  justify-content: center;
+  display: flex;
+  font-family: 'Raleway';
+  color: #666;
+  font-weight: 600px; }
+
+.w-navbar-drop-touring-content li {
+  justify-content: center;
+  display: flex;
+  font-family: 'Raleway';
+  font-weight: 600px;
+  color: #666; }
+
+.w-navbar-drop-nordic-content div li {
+  justify-content: center;
+  display: flex;
+  font-family: 'Raleway';
+  font-weight: 600px;
+  color: #666; }
+
+.w-navbar-drop-alpine-content img {
+  display: flex;
+  align-content: center; }
+
+#navbar-goggles {
+  margin-bottom: 25px; }
+
+.w-navbar-drop-touring-content {
+  display: none;
+  position: fixed;
+  left: 0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  margin-top: 69px;
+  width: 100vw;
+  height: auto;
+  background: white;
+  z-index: 1;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end; }
+
+.w-navbar-drop-nordic-content {
+  display: none;
+  position: fixed;
+  left: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 69px;
+  width: 100vw;
+  height: auto;
+  background: white;
+  z-index: 0;
+  list-style: none;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap; }
+
+.w-navbar-drop-nordic-content div {
+  margin: 10px; }
+
+.w-navbar-drop-nordic-content img {
+  width: 135px; }
+
+.w-navbar-drop-nordic-content li {
+  font-size: 15px; }
+
+.w-navbar-drop-alpine-content:hover {
+  display: flex; }
+
+.w-navbar-button-women:hover .w-navbar-drop-content {
+  display: flex; }
+
+.w-navbar-drop-alpine:hover .w-navbar-drop-alpine-content {
+  display: flex; }
+
+.w-navbar-drop-alpine:hover {
+  background: white; }
+
+.w-navbar-drop-alpine-content {
+  display: flex; }
+
+.w-navbar-drop-touring:hover {
+  background: white;
+  z-index: 3; }
+
+.w-navbar-drop-touring-content {
+  display: flex; }
+
+.w-navbar-drop-nordic:hover {
+  background: white;
+  z-index: 4; }
+
+.w-navbar-drop-nordic-content {
+  display: flex; }
+
+@media (min-width: 900px) {
+  .w-navbar-button {
+    display: flex; }
+  .w-navbar-button-women {
+    display: flex; } }
