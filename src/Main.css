@@ -227,6 +227,24 @@
 .navbar-drop-nordic-content {
   display: flex; }
 
+.underline {
+  display: none;
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: relative;
+  bottom: 25px;
+  animation-name: lineMoveUp;
+  animation-duration: .2s; }
+
+@keyframes lineMoveUp {
+  from {
+    bottom: 20px;
+    opacity: .2; }
+  to {
+    bottom: 25px;
+    opacity: 1; } }
+
 @media (min-width: 900px) {
   .nav-atomic {
     display: flex; }
@@ -413,6 +431,25 @@
   justify-content: center;
   align-items: flex-end;
   flex-wrap: wrap; }
+
+.w-underline {
+  display: none;
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: relative;
+  bottom: 25px;
+  animation-name: lineMoveUp;
+  animation-duration: .2s;
+  color: white; }
+
+@keyframes lineMoveUp {
+  from {
+    bottom: 20px;
+    opacity: .2; }
+  to {
+    bottom: 25px;
+    opacity: 1; } }
 
 .w-navbar-drop-touring-content img {
   height: 175px; }

@@ -28,12 +28,20 @@ class Men extends Component {
         document.getElementById('navbar-drop-alpine-special').style.display = 'flex';
     }
 
+    underlineMove=()=>{
+        document.getElementById('underline-move').style.display = 'flex';
+    }
+
+    underlineDown=()=>{
+        document.getElementById('underline-move').style.display = 'none';
+    }
 
     render(){
         return(
-            <div className='navbar-button-men'>Men
-            <div className='navbar-dropdown'>
-                <div className='navbar-drop-content'>
+        <div>
+            <div className='navbar-button-men' onMouseOver={()=>this.underlineMove()} onMouseLeave={()=>this.underlineDown()}>Men
+                <div className='navbar-dropdown'>
+                  <div className='navbar-drop-content'>
                     <div className='navbar-drop-alpine' id='navbar-alpine-special'>
                         <div className='navbar-alpine'>
                             Alpine
@@ -146,6 +154,8 @@ class Men extends Component {
                 </div>
 
             </div>
+          </div>
+          <div className='underline' id='underline-move'></div>
         </div>
         )
     }

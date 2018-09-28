@@ -239,6 +239,27 @@
 .navbar-drop-touring:hover {background: white; z-index: 3;} .navbar-drop-touring-content {display: flex;}
 .navbar-drop-nordic:hover {background: white; z-index: 4;} .navbar-drop-nordic-content {display: flex;}
 
+@mixin underline {
+    display: none;
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: relative;
+    bottom: 25px;
+    animation-name: lineMoveUp;
+    animation-duration: .2s;
+}
+
+.underline {
+    @include underline
+}
+
+@keyframes lineMoveUp {
+    from {bottom: 20px; opacity: .2}
+    to {bottom: 25px; opacity: 1}
+}
+
+
 
 
 @media (min-width: 900px){
