@@ -252,7 +252,20 @@
     animation-name: lineMoveUp;
     animation-duration: .1s;
     top: 2px;
-    
+}
+
+@mixin underline-red {
+    display: none;
+    width: 100%;
+    height: 2px;
+    background: #CB1F3E;
+    position: relative;
+    animation-duration: .1s;
+    top: 2px;
+}
+
+.underline-red {
+    @include underline-red
 }
 
 .underline {
