@@ -39,7 +39,8 @@ class Men extends Component {
         document.getElementById('navbar-drop-alpine-special').style.display = 'flex';
         document.getElementById('navbar-nordic-special').style.color = textColor1;
         document.getElementById('underline-move-red-nordic').style.background = '#f1f1f1';
-        document.getElementById('underline-move-red-touring').style.background = '#CB1F3E';
+        document.getElementById('underline-move-red-alpine').style.background = '#CB1F3E';
+        document.getElementById('navbar-alpine-special2').style.color = '#CB1F3E';
     }
 
     underlineMove=()=>{
@@ -51,9 +52,6 @@ class Men extends Component {
         document.getElementById('underline-move').style.display = 'none';
     }
 
-    alpToTour=()=>{
-        document.getElementById('underline-move-red-touring').style.background = '#CB1F3E';
-    }
     tourToNord=()=>{
         document.getElementById('underline-move-red-nordic').style.background = '#CB1F3E';
     }
@@ -66,7 +64,7 @@ class Men extends Component {
               <div className='underline' id='underline-move'></div>
                 <div className='navbar-dropdown'>
                   <div className='navbar-drop-content'>
-                    <div className='navbar-drop-alpine' id='navbar-alpine-special' onMouseLeave={()=>this.alpToTour()}>
+                    <div className='navbar-drop-alpine' id='navbar-alpine-special'>
                         <div className='navbar-alpine' id='navbar-alpine-special2'>
                             Alpine
                             <div className='underline-red' id='underline-move-red-alpine'></div>
@@ -111,7 +109,7 @@ class Men extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className='navbar-drop-touring' id='navbar-drop-touring-special' onMouseOver={()=>this.changeAlpineBackground('none', 'none', '#333', '#CB1F3E', '#f1f1f1')} onMouseLeave={()=>this.changeAlpineBackground('white', 'flex', '#CB1F3E', '#333', '#CB1F3E', '#f1f1f1')}>
+                    <div className='navbar-drop-touring' id='navbar-drop-touring-special' onMouseOver={()=>this.changeAlpineBackground('none', 'none', '#333', '#CB1F3E', '#f1f1f1', '#CB1F3E')} onMouseLeave={()=>this.changeAlpineBackground('white', 'flex', '#CB1F3E', '#333', '#CB1F3E', '#f1f1f1')}>
                         <div className='navbar-touring' id='navbar-touring-special'>
                             Touring
                             <div className='underline-red' id='underline-move-red-touring'></div>
