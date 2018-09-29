@@ -43,6 +43,7 @@ class Women extends Component {
         return(
         <div>
             <div className='w-navbar-button-women' onMouseOver={()=>this.underlineMove()} onMouseLeave={()=>this.underlineDown()} >Women
+                <div className='w-underline' id='w-underline-move'></div>
                 <div className='w-navbar-dropdown'>
                     <div className='w-navbar-drop-content'>
                         <div className='w-navbar-drop-alpine' id='w-navbar-alpine-special'>
@@ -157,7 +158,7 @@ class Women extends Component {
                     </div>
                 </div>
             </div>
-            <div className='w-underline' id='w-underline-move'></div>
+            {/* <div className='w-underline' id='w-underline-move'></div> */}
         </div>
         )
     }

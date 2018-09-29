@@ -6,26 +6,31 @@ class Men extends Component {
         super()
     }
 
-    changeAlpineBackground=(color, display)=>{
+    changeAlpineBackground=(color, display, textColor, textColor2)=>{
         document.getElementById('navbar-alpine-special').style.background = color;
         document.getElementById('navbar-drop-alpine-special').style.display = display;
         document.getElementById('navbar-drop-nordic-content-special').style.display = 'none'
+        document.getElementById('navbar-alpine-special2').style.color = textColor;
+        document.getElementById('navbar-touring-special').style.color = textColor2; 
     }
 
-    changeTouringBackground=(color, display)=>{
+    changeTouringBackground=(color, display, textColor1, textColor2)=>{
         document.getElementById('navbar-alpine-special').style.display = 'flex';
         document.getElementById('navbar-drop-touring-special').style.display = 'flex';
         document.getElementById('navbar-alpine-special').style.background = color;
         document.getElementById('navbar-drop-alpine-special').style.display = display;
         document.getElementById('navbar-drop-touring-content-special').style.display = 'none';
         document.getElementById('navbar-drop-nordic-content-special').style.display = 'flex';
+        document.getElementById('navbar-nordic-special').style.color = textColor1;
+        document.getElementById('navbar-alpine-special2').style.color = textColor2;
     }
 
-    changeNordicBackground=()=>{
+    changeNordicBackground=(textColor1)=>{
         document.getElementById('navbar-drop-nordic-content-special').style.display = 'none'
         document.getElementById('navbar-drop-touring-content-special').style.display = 'flex'
         document.getElementById('navbar-alpine-special').style.background = 'white';
         document.getElementById('navbar-drop-alpine-special').style.display = 'flex';
+        document.getElementById('navbar-nordic-special').style.color = textColor1;
     }
 
     underlineMove=()=>{
@@ -40,10 +45,11 @@ class Men extends Component {
         return(
         <div>
             <div className='navbar-button-men' onMouseOver={()=>this.underlineMove()} onMouseLeave={()=>this.underlineDown()}>Men
+              <div className='underline' id='underline-move'></div>
                 <div className='navbar-dropdown'>
                   <div className='navbar-drop-content'>
                     <div className='navbar-drop-alpine' id='navbar-alpine-special'>
-                        <div className='navbar-alpine'>
+                        <div className='navbar-alpine' id='navbar-alpine-special2'>
                             Alpine
                         </div>
                         <div className='navbar-drop-alpine-content' id='navbar-drop-alpine-special'>
@@ -85,8 +91,8 @@ class Men extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className='navbar-drop-touring' id='navbar-drop-touring-special' onMouseOver={()=>this.changeAlpineBackground('none', 'none')} onMouseLeave={()=>this.changeAlpineBackground('white', 'flex')}>
-                        <div className='navbar-touring'>
+                    <div className='navbar-drop-touring' id='navbar-drop-touring-special' onMouseOver={()=>this.changeAlpineBackground('none', 'none', '#333', '#CB1F3E')} onMouseLeave={()=>this.changeAlpineBackground('white', 'flex', '#CB1F3E', '#333')}>
+                        <div className='navbar-touring' id='navbar-touring-special'>
                             Touring
                         </div>
                         <div className='navbar-drop-touring-content' id='navbar-drop-touring-content-special'>
@@ -124,8 +130,8 @@ class Men extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className='navbar-drop-nordic' onMouseOver={()=>this.changeTouringBackground('none', 'none')} onMouseLeave={()=>this.changeNordicBackground('white', 'flex')}>
-                        <div className='navbar-nordic'>
+                    <div className='navbar-drop-nordic' onMouseOver={()=>this.changeTouringBackground('none', 'none', '#CB1F3E', '#333')} onMouseLeave={()=>this.changeNordicBackground('#333')}>
+                        <div className='navbar-nordic' id='navbar-nordic-special'>
                             Nordic
                         </div>
                         <div className='navbar-drop-nordic-content' id='navbar-drop-nordic-content-special'>
@@ -155,7 +161,7 @@ class Men extends Component {
 
             </div>
           </div>
-          <div className='underline' id='underline-move'></div>
+          {/* <div className='underline' id='underline-move'></div> */}
         </div>
         )
     }

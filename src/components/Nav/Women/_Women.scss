@@ -46,6 +46,8 @@
     height: 75px;
     align-items: center;
     font-size: 15px;
+    flex-direction: column;
+    margin-top: 56px;
 }
 
 .w-navbar-dropdown {
@@ -90,7 +92,7 @@
     z-index: 1;
     width: 100vw;
     height: 70px;
-    margin-top: 37px;
+    margin-top: 27px;
     left: 0;
     justify-content: space-around;
     color: black;
@@ -191,9 +193,9 @@
     height: 2px;
     background: white;
     position: relative;
-    bottom: 25px;
+    top: 2px;
     animation-name: lineMoveUp;
-    animation-duration: .2s;
+    animation-duration: .1s;
     color: white;
 }
 
@@ -202,8 +204,8 @@
 }
 
 @keyframes lineMoveUp {
-    from {bottom: 20px; opacity: .2}
-    to {bottom: 25px; opacity: 1}
+    from {top: 5px; opacity: .2}
+    to {top: 2px; opacity: 1}
 }
 
 .w-navbar-drop-touring-content img {
