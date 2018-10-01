@@ -15,7 +15,6 @@ class Men extends Component {
         document.getElementById('underline-move-red-alpine').style.background = underlineColorAlp;
         document.getElementById('underline-move-red-touring').style.display = 'flex';
         document.getElementById('underline-move-red-touring').style.background = ucColorTour;
-        // document.getElementById('underline-move-red-nordic').style.background = '#CB1F3E';
     }
 
     changeTouringBackground=(color, display, textColor1, textColor2, ucColorAlp)=>{
