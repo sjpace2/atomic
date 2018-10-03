@@ -115,6 +115,7 @@
   display: none;
   position: fixed;
   left: 0;
+  padding: 27px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 0;
@@ -229,9 +230,6 @@
 .navbar-drop-nordic-content {
   display: flex; }
 
-.navbar-drop-alpine:hover .underline-red {
-  animation: lineMoveUp2 .1s; }
-
 .navbar-drop-touring:hover .underline-red {
   animation: lineMoveUp2 .1s; }
 
@@ -278,6 +276,18 @@
   display: flex;
   flex-direction: column;
   margin-top: 56px; }
+
+.navbar-image {
+  position: relative;
+  animation-name: none;
+  animation-duration: .3s;
+  animation-fill-mode: forwards; }
+
+@keyframes imageMove {
+  from {
+    bottom: 0px; }
+  to {
+    bottom: 3px; } }
 
 @media (min-width: 900px) {
   .nav-atomic {
