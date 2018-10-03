@@ -143,6 +143,11 @@
 .w-navbar-drop-alpine-content img {
     display: flex;
     align-content: center;
+    height: 80%;
+}
+
+.w-navbar-drop-alpine-content div {
+    margin: 30px;
 }
 
 #navbar-goggles {
@@ -166,6 +171,10 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
+}
+
+.w-navbar-drop-touring-content div {
+    padding: 20px;
 }
 
 .w-navbar-drop-nordic-content {

@@ -146,6 +146,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
+    padding: 39px;
 }
 
 .navbar-drop-alpine-content li {
@@ -156,12 +157,17 @@
     font-weight: 600px;
 }
 
+
 .navbar-drop-touring-content li {
     justify-content: center;
     display: flex;
     font-family: 'Raleway';
     font-weight: 600px;
     color: #666;
+}
+
+.navbar-drop-touring-content div {
+    padding: 20px;
 }
 
 .navbar-drop-nordic-content div li {

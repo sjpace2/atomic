@@ -127,7 +127,8 @@
   list-style: none;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-end; }
+  align-items: flex-end;
+  padding: 39px; }
 
 .navbar-drop-alpine-content li {
   justify-content: center;
@@ -142,6 +143,9 @@
   font-family: 'Raleway';
   font-weight: 600px;
   color: #666; }
+
+.navbar-drop-touring-content div {
+  padding: 20px; }
 
 .navbar-drop-nordic-content div li {
   justify-content: center;
@@ -438,7 +442,11 @@
 
 .w-navbar-drop-alpine-content img {
   display: flex;
-  align-content: center; }
+  align-content: center;
+  height: 80%; }
+
+.w-navbar-drop-alpine-content div {
+  margin: 30px; }
 
 #navbar-goggles {
   margin-bottom: 25px; }
@@ -459,6 +467,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end; }
+
+.w-navbar-drop-touring-content div {
+  padding: 20px; }
 
 .w-navbar-drop-nordic-content {
   display: none;
