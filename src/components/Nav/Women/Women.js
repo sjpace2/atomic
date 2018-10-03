@@ -67,6 +67,55 @@ class Women extends Component {
         document.getElementById('underline-move-red-nordic').style.background = '#CB1F3E';
     }
 
+    imageMove=(animation)=>{
+        document.getElementById('w-navbar-skis-pic').style.animationName = animation;
+        document.getElementById('w-navbar-touring-skis-pic').style.animationName = animation;
+        document.getElementById('w-navbar-nordic-skis-pic').style.animationName = animation;
+    }
+
+    image2Move=(animation)=>{
+        document.getElementById('w-navbar-bindings-pic').style.animationName = animation;
+        document.getElementById('w-navbar-touring-skins-pic').style.animationName = animation;
+        document.getElementById('w-navbar-nordic-bindings-pic').style.animationName = animation;
+    }
+
+    image3Move=(animation)=>{
+        document.getElementById('w-navbar-boots-pic').style.animationName = animation;
+        document.getElementById('w-navbar-touring-bindings-pic').style.animationName = animation;
+        document.getElementById('w-navbar-nordic-boots-pic').style.animationName = animation;
+    }
+
+    image4Move=(animation)=>{
+        document.getElementById('w-navbar-helmets-pic').style.animationName = animation;
+        document.getElementById('w-navbar-touring-boots-pic').style.animationName = animation;
+        document.getElementById('w-navbar-nordic-poles-pic').style.animationName = animation;
+    }
+
+    image5Move=(animation)=>{
+        document.getElementById('w-navbar-goggles-pic').style.animationName = animation;
+        document.getElementById('w-navbar-touring-helmets-pic').style.animationName = animation;
+        document.getElementById('w-navbar-nordic-bags-pic').style.animationName = animation;
+    }
+
+    image6Move=(animation)=>{
+        document.getElementById('w-navbar-poles-pic').style.animationName = animation;
+        document.getElementById('w-navbar-touring-poles-pic').style.animationName = animation;
+    }
+
+    image7Move=(animation)=>{
+        document.getElementById('w-navbar-protection-pic').style.animationName = animation;
+        document.getElementById('w-navbar-touring-bags-pic').style.animationName = animation;
+    }
+
+    image8Move=(animation)=>{
+        document.getElementById('w-navbar-bags-pic').style.animationName = animation;
+        document.getElementById('w-navbar-touring-apparel-pic').style.animationName = animation;
+    }
+    
+    image9Move=(animation)=>{
+        document.getElementById('w-navbar-apparel-pic').style.animationName = animation;
+    }
+
     render(){
         return(
         <div>
@@ -81,39 +130,39 @@ class Women extends Component {
                             </div>
                             <div className='w-navbar-drop-alpine-content' id='w-navbar-drop-alpine-special'>
                                 <div>
-                                    <img src={require("./../../../images/women/alpine/skis.png")} alt="skis"/>
+                                    <img src={require("./../../../images/women/alpine/skis.png")} alt="skis" className='w-navbar-image' id='w-navbar-skis-pic' alt="skis" onMouseOver={()=>this.imageMove("imageMove")} onMouseLeave={()=>this.imageMove("none")}/>
                                     <li>Skis</li>
                                 </div>
                             <div>
-                                    <img src={require("./../../../images/women/alpine/bindings.png")} alt="bindings"/>
+                                    <img src={require("./../../../images/women/alpine/bindings.png")} alt="bindings" className='w-navbar-image' id='w-navbar-bindings-pic' alt="skis" onMouseOver={()=>this.image2Move("imageMove")} onMouseLeave={()=>this.image2Move("none")}/>
                                     <li>Ski Bindings</li>
                                 </div>
                                 <div>
-                                    <img src={require("./../../../images/women/alpine/boots.png")} alt="boots"/>
+                                    <img src={require("./../../../images/women/alpine/boots.png")} alt="boots" className='w-navbar-image' id='w-navbar-boots-pic' alt="skis" onMouseOver={()=>this.image3Move("imageMove")} onMouseLeave={()=>this.image3Move("none")}/>
                                     <li>Ski Boots</li>
                                 </div>
                                 <div>
-                                    <img src={require("./../../../images/women/alpine/helmet.png")} alt="helmets"/>
+                                    <img src={require("./../../../images/women/alpine/helmet.png")} alt="helmets" className='w-navbar-image' id='w-navbar-helmets-pic' alt="skis" onMouseOver={()=>this.image4Move("imageMove")} onMouseLeave={()=>this.image4Move("none")}/>
                                     <li>Ski Helmets</li>
                                 </div>
                                 <div>
-                                    <img id='w-navbar-goggles' src={require("./../../../images/women/alpine/goggles.png")} alt="goggles"/>
+                                    <img id='w-navbar-goggles' src={require("./../../../images/women/alpine/goggles.png")} alt="goggles" className='w-navbar-image' id='w-navbar-goggles-pic' alt="skis" onMouseOver={()=>this.image5Move("imageMove")} onMouseLeave={()=>this.image5Move("none")}/>
                                     <li>Ski Goggles</li>
                                 </div>
                                 <div>
-                                    <img src={require("./../../../images/women/alpine/poles.png")} alt="poles"/>
+                                    <img src={require("./../../../images/women/alpine/poles.png")} alt="poles" className='w-navbar-image' id='w-navbar-poles-pic' alt="skis" onMouseOver={()=>this.image6Move("imageMove")} onMouseLeave={()=>this.image6Move("none")}/>
                                     <li>Ski Poles</li>
                                 </div>
                                 <div>
-                                    <img src={require("./../../../images/women/alpine/belt thing.png")} alt="protection"/>
+                                    <img src={require("./../../../images/women/alpine/belt thing.png")} alt="protection" className='w-navbar-image' id='w-navbar-protection-pic' alt="skis" onMouseOver={()=>this.image7Move("imageMove")} onMouseLeave={()=>this.image7Move("none")}/>
                                     <li>Ski Protection</li>
                                 </div>
                                 <div>
-                                    <img src={require("./../../../images/women/alpine/packs.png")} alt="bags"/>
+                                    <img src={require("./../../../images/women/alpine/packs.png")} alt="bags" className='w-navbar-image' id='w-navbar-bags-pic' alt="skis" onMouseOver={()=>this.image8Move("imageMove")} onMouseLeave={()=>this.image8Move("none")}/>
                                     <li>Ski Bags & Packs</li>
                                 </div>
                             <div>
-                                    <img src={require("./../../../images/women/alpine/clothing.png")} alt="apparel"/>
+                                    <img src={require("./../../../images/women/alpine/clothing.png")} alt="apparel" className='w-navbar-image' id='w-navbar-apparel-pic' alt="skis" onMouseOver={()=>this.image9Move("imageMove")} onMouseLeave={()=>this.image9Move("none")}/>
                                     <li>Apparel</li>
                                 </div>
                             </div>
@@ -125,35 +174,35 @@ class Women extends Component {
                             </div>
                             <div className='w-navbar-drop-touring-content' id='w-navbar-drop-touring-content-special'>
                             <div>
-                                    <img src={require("./../../../images/women/touring/skis.png")} alt="skis"/>
+                                    <img src={require("./../../../images/women/touring/skis.png")} alt="skis" className='w-navbar-image' id='w-navbar-touring-skis-pic' alt="skis" onMouseOver={()=>this.imageMove("imageMove")} onMouseLeave={()=>this.imageMove("none")}/>
                                     <li>Touring Ski</li>
                                 </div>
                             <div>
-                                    <img src={require("./../../../images/women/touring/skins.png")} alt="skins"/>
+                                    <img src={require("./../../../images/women/touring/skins.png")} alt="skins" className='w-navbar-image' id='w-navbar-touring-skins-pic' alt="skis" onMouseOver={()=>this.image2Move("imageMove")} onMouseLeave={()=>this.image2Move("none")}/>
                                     <li>Touring Skins</li>
                                 </div>
                                 <div>
-                                    <img src={require("./../../../images/women/touring/bindings.png")} alt="bindings"/>
+                                    <img src={require("./../../../images/women/touring/bindings.png")} alt="bindings" className='w-navbar-image' id='w-navbar-touring-bindings-pic' alt="skis" onMouseOver={()=>this.image3Move("imageMove")} onMouseLeave={()=>this.image3Move("none")}/>
                                     <li>Touring Bindings</li>
                                 </div>
                                 <div>
-                                    <img src={require("./../../../images/women/touring/boots.png")} alt="boots"/>
+                                    <img src={require("./../../../images/women/touring/boots.png")} alt="boots" className='w-navbar-image' id='w-navbar-touring-boots-pic' alt="skis" onMouseOver={()=>this.image4Move("imageMove")} onMouseLeave={()=>this.image4Move("none")}/>
                                     <li>Touring Boots</li>
                                 </div>
                                 <div>
-                                    <img id='w-navbar-goggles' src={require("./../../../images/women/touring/helmets.png")} alt="helmets"/>
+                                    <img id='w-navbar-goggles' src={require("./../../../images/women/touring/helmets.png")} alt="helmets" className='w-navbar-image' id='w-navbar-touring-helmets-pic' alt="skis" onMouseOver={()=>this.image5Move("imageMove")} onMouseLeave={()=>this.image5Move("none")}/>
                                     <li>Touring Helmets</li>
                                 </div>
                                 <div>
-                                    <img src={require("./../../../images/women/touring/poles.png")} alt="poles"/>
+                                    <img src={require("./../../../images/women/touring/poles.png")} alt="poles" className='w-navbar-image' id='w-navbar-touring-poles-pic' alt="skis" onMouseOver={()=>this.image6Move("imageMove")} onMouseLeave={()=>this.image6Move("none")}/>
                                     <li>Touring Poles</li>
                                 </div>
                                 <div>
-                                    <img src={require("./../../../images/women/touring/packs.png")} alt="bags"/>
+                                    <img src={require("./../../../images/women/touring/packs.png")} alt="bags" className='w-navbar-image' id='w-navbar-touring-bags-pic' alt="skis" onMouseOver={()=>this.image7Move("imageMove")} onMouseLeave={()=>this.image7Move("none")}/>
                                     <li>Ski Bags & Packs</li>
                                 </div>
                             <div>
-                                    <img src={require("./../../../images/women/touring/clothing.png")} alt="apparel"/>
+                                    <img src={require("./../../../images/women/touring/clothing.png")} alt="apparel" className='w-navbar-image' id='w-navbar-touring-apparel-pic' alt="skis" onMouseOver={()=>this.image8Move("imageMove")} onMouseLeave={()=>this.image8Move("none")}/>
                                     <li>Apparel</li>
                                 </div>
                             </div>
@@ -165,23 +214,23 @@ class Women extends Component {
                             </div>
                             <div className='w-navbar-drop-nordic-content' id='w-navbar-drop-nordic-content-special'>
                             <div>
-                                    <img src={require("./../../../images/women/crosscountry/skis.png")} alt="ski"/>
+                                    <img src={require("./../../../images/women/crosscountry/skis.png")} alt="ski" className='w-navbar-image' id='w-navbar-nordic-skis-pic' alt="skis" onMouseOver={()=>this.imageMove("imageMove")} onMouseLeave={()=>this.imageMove("none")}/>
                                     <li>Crosscountry Ski</li>
                                 </div>
                                 <div>
-                                    <img src={require("./../../../images/women/crosscountry/bindings.png")} alt="bindings"/>
+                                    <img src={require("./../../../images/women/crosscountry/bindings.png")} alt="bindings" className='w-navbar-image' id='w-navbar-nordic-bindings-pic' alt="skis" onMouseOver={()=>this.image2Move("imageMove")} onMouseLeave={()=>this.image2Move("none")}/>
                                     <li>Crosscountry Bindings</li>
                                 </div>
                                 <div>
-                                    <img src={require("./../../../images/women/crosscountry/boots.png")} alt="boots"/>
+                                    <img src={require("./../../../images/women/crosscountry/boots.png")} alt="boots" className='w-navbar-image' id='w-navbar-nordic-boots-pic' alt="skis" onMouseOver={()=>this.image3Move("imageMove")} onMouseLeave={()=>this.image3Move("none")}/>
                                     <li>Crosscountry Boots</li>
                                 </div>
                                 <div>
-                                    <img id='w-navbar-goggles' src={require("./../../../images/women/crosscountry/poles.png")} alt="poles"/>
+                                    <img id='w-navbar-goggles' src={require("./../../../images/women/crosscountry/poles.png")} alt="poles" className='w-navbar-image' id='w-navbar-nordic-poles-pic' alt="skis" onMouseOver={()=>this.image4Move("imageMove")} onMouseLeave={()=>this.image4Move("none")}/>
                                     <li>Crosscountry Poles</li>
                                 </div>
                                 <div>
-                                    <img src={require("./../../../images/women/crosscountry/packs.png")} alt="bags"/>
+                                    <img src={require("./../../../images/women/crosscountry/packs.png")} alt="bags" className='w-navbar-image' id='w-navbar-nordic-bags-pic' alt="skis" onMouseOver={()=>this.image5Move("imageMove")} onMouseLeave={()=>this.image5Move("none")}/>
                                     <li>Crosscountry Bags</li>
                                 </div>
                             </div>

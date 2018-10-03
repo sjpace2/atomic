@@ -231,6 +231,19 @@
     to {top: 2px; opacity: 1}
 }
 
+.w-navbar-image {
+    position: relative;
+    animation-name: none;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes imageMove {
+    from {bottom: 0px;}
+    to {bottom: 3px;}
+}
+
 .w-navbar-drop-touring-content img {
     height: 175px;
 }
