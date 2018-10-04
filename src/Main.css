@@ -162,6 +162,7 @@
   margin-bottom: 25px; }
 
 .navbar-drop-touring-content {
+  visibility: hidden;
   display: none;
   position: fixed;
   left: 0;
@@ -594,3 +595,7 @@
     display: flex; }
   .w-navbar-button-women {
     display: flex; } }
+
+.store-locator {
+  position: absolute;
+  top: 0; }

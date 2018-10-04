@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import StoreLocator from './../../StoreLocator/StoreLocator';
 
 
 class Men extends Component {
@@ -6,7 +7,7 @@ class Men extends Component {
         super()
     }
 
-    changeAlpineBackground=(color, display, textColor, textColor2, underlineColorAlp, ucColorTour)=>{
+    changeAlpineBackground=(color, display, textColor, textColor2, underlineColorAlp, ucColorTour, visibility)=>{
         document.getElementById('navbar-alpine-special').style.background = color;
         document.getElementById('navbar-drop-alpine-special').style.display = display;
         document.getElementById('navbar-drop-nordic-content-special').style.display = 'none'
@@ -17,6 +18,7 @@ class Men extends Component {
         document.getElementById('underline-move-red-touring').style.background = ucColorTour;
         document.getElementById('underline-move-red-alpine').style.animation = 'lineMoveUp2';
         document.getElementById('underline-move-red-alpine').style.animationDuration = '.1s';
+        document.getElementById('navbar-drop-touring-content-special').style.visibility = visibility;
     }
 
     changeTouringBackground=(color, display, textColor1, textColor2, ucColorAlp)=>{
@@ -105,8 +107,8 @@ class Men extends Component {
     image9Move=(animation)=>{
         document.getElementById('navbar-apparel-pic').style.animationName = animation;
     }
-    
 
+   
   
     render(){
         return(
@@ -158,9 +160,11 @@ class Men extends Component {
                                 <img src={require("./../../../images/men/alpine/men clothing.png")} alt="apparel" className='navbar-image' id='navbar-apparel-pic' alt="skis" onMouseOver={()=>this.image9Move("imageMove")} onMouseLeave={()=>this.image9Move("none")}/>
                                 <li>Apparel</li>
                             </div>
+                            <StoreLocator/>
                         </div>
+                       
                     </div>
-                    <div className='navbar-drop-touring' id='navbar-drop-touring-special' onMouseOver={()=>this.changeAlpineBackground('none', 'none', '#333', '#CB1F3E', '#f1f1f1', '#CB1F3E')} onMouseLeave={()=>this.changeAlpineBackground('white', 'flex', '#CB1F3E', '#333', '#CB1F3E', '#f1f1f1')}>
+                    <div className='navbar-drop-touring' id='navbar-drop-touring-special' onMouseOver={()=>this.changeAlpineBackground('none', 'none', '#333', '#CB1F3E', '#f1f1f1', '#CB1F3E', 'visible')} onMouseLeave={()=>this.changeAlpineBackground('white', 'flex', '#CB1F3E', '#333', '#CB1F3E', '#f1f1f1', 'hidden')}>
                         <div className='navbar-touring' id='navbar-touring-special'>
                             Touring
                             <div className='underline-red' id='underline-move-red-touring'></div>

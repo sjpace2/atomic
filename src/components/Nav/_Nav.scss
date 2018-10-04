@@ -149,6 +149,8 @@
     padding: 39px;
 }
 
+
+
 .navbar-drop-alpine-content li {
     justify-content: center;
     display: flex;
@@ -157,6 +159,9 @@
     font-weight: 600px;
 }
 
+// .navbar-drop-alpine-content div {
+//     width: 200px;
+// }
 
 .navbar-drop-touring-content li {
     justify-content: center;
@@ -189,6 +194,7 @@
 
 
 .navbar-drop-touring-content {
+    visibility: hidden;
     display: none;
     position: fixed;
     left: 0;
