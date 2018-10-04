@@ -160,8 +160,9 @@ class Men extends Component {
                                 <img src={require("./../../../images/men/alpine/men clothing.png")} alt="apparel" className='navbar-image' id='navbar-apparel-pic' alt="skis" onMouseOver={()=>this.image9Move("imageMove")} onMouseLeave={()=>this.image9Move("none")}/>
                                 <li>Apparel</li>
                             </div>
-                            <StoreLocator/>
+                           
                         </div>
+                        {/* <StoreLocator/> */}
                        
                     </div>
                     <div className='navbar-drop-touring' id='navbar-drop-touring-special' onMouseOver={()=>this.changeAlpineBackground('none', 'none', '#333', '#CB1F3E', '#f1f1f1', '#CB1F3E', 'visible')} onMouseLeave={()=>this.changeAlpineBackground('white', 'flex', '#CB1F3E', '#333', '#CB1F3E', '#f1f1f1', 'hidden')}>
