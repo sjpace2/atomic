@@ -108,7 +108,7 @@
   height: 70px;
   margin-top: 27px;
   left: 0;
-  justify-content: space-around;
+  justify-content: center;
   color: black; }
 
 .navbar-drop-alpine-content {
@@ -400,7 +400,7 @@
   height: 70px;
   margin-top: 27px;
   left: 0;
-  justify-content: space-around;
+  justify-content: center;
   color: black; }
 
 .w-navbar-drop-alpine-content {
@@ -599,3 +599,308 @@
 .store-locator {
   position: absolute;
   top: 0; }
+
+.k-navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #CB1F3E;
+  color: white;
+  height: 75px;
+  font-family: 'Raleway';
+  font-weight: 600; }
+
+.k-navbar-right {
+  display: none;
+  width: 15px;
+  justify-content: space-between;
+  padding-right: 38px; }
+
+.k-navbar-alpine {
+  color: #CB1F3E;
+  margin-top: 25px;
+  font-family: 'Raleway';
+  font-weight: 600; }
+
+.k-navbar-touring {
+  color: #333;
+  margin-top: 25px;
+  font-family: 'Raleway';
+  font-weight: 600px; }
+
+.k-navbar-nordic {
+  color: #333;
+  margin-top: 25px;
+  font-family: 'Raleway';
+  font-weight: 600px; }
+
+.fa-search {
+  display: flex;
+  color: white;
+  align-items: center;
+  padding-right: 15px;
+  font-size: 15px; }
+
+.k-navbar-left {
+  align-items: center;
+  display: flex; }
+
+.k-navbar-button {
+  display: none;
+  text-transform: uppercase;
+  height: 75px;
+  align-items: center;
+  font-size: 15px; }
+
+.k-navbar-button-kids {
+  display: none;
+  text-transform: uppercase;
+  height: 75px;
+  align-items: center;
+  font-size: 15px;
+  flex-direction: column;
+  margin-top: 56px; }
+
+.k-navbar-dropdown {
+  position: relative;
+  display: inline-block; }
+
+.k-navbar-drop-alpine {
+  position: relative;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  font-size: 15px;
+  background: white; }
+
+.k-navbar-drop-touring {
+  position: relative;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  font-size: 15px; }
+
+.k-navbar-drop-nordic {
+  position: relative;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+  font-size: 15px; }
+
+.k-navbar-drop-content {
+  display: none;
+  position: fixed;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100vw;
+  height: 70px;
+  margin-top: 27px;
+  left: 0;
+  justify-content: center;
+  color: black; }
+
+.k-navbar-drop-alpine-content {
+  display: none;
+  position: fixed;
+  left: 0;
+  padding: 27px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  margin-top: 69px;
+  width: 100vw;
+  height: auto;
+  background: white;
+  z-index: 2;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 39px; }
+
+.k-navbar-drop-alpine-content li {
+  justify-content: center;
+  display: flex;
+  font-family: 'Raleway';
+  color: #666;
+  font-weight: 600px; }
+
+.k-navbar-drop-touring-content li {
+  justify-content: center;
+  display: flex;
+  font-family: 'Raleway';
+  font-weight: 600px;
+  color: #666; }
+
+.k-navbar-drop-touring-content div {
+  padding: 20px; }
+
+.k-navbar-drop-nordic-content div li {
+  justify-content: center;
+  display: flex;
+  font-family: 'Raleway';
+  font-weight: 600px;
+  color: #666; }
+
+.k-navbar-drop-alpine-content img {
+  display: flex;
+  align-content: center; }
+
+#k-navbar-goggles {
+  margin-bottom: 25px; }
+
+.k-navbar-drop-touring-content {
+  visibility: hidden;
+  display: none;
+  position: fixed;
+  left: 0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  margin-top: 69px;
+  width: 100vw;
+  height: auto;
+  background: white;
+  z-index: 1;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end; }
+
+.k-navbar-drop-nordic-content {
+  visibility: hidden;
+  display: none;
+  position: fixed;
+  left: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 69px;
+  width: 100vw;
+  height: auto;
+  background: white;
+  z-index: 0;
+  list-style: none;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap; }
+
+.k-navbar-drop-nordic-content div {
+  margin: 10px; }
+
+.k-navbar-drop-nordic-content img {
+  height: 200px; }
+
+.k-navbar-drop-nordic-content li {
+  font-size: 15px; }
+
+.k-navbar-drop-alpine-content:hover {
+  display: flex; }
+
+.k-navbar-button-kids:hover .k-navbar-drop-content {
+  display: flex; }
+
+.k-navbar-drop-alpine:hover .k-navbar-drop-alpine-content {
+  display: flex; }
+
+.k-navbar-drop-alpine:hover {
+  background: white; }
+
+.k-navbar-drop-alpine-content {
+  display: flex; }
+
+.k-navbar-drop-touring:hover {
+  background: white;
+  z-index: 3; }
+
+.k-navbar-drop-touring-content {
+  display: flex; }
+
+.k-navbar-drop-nordic:hover {
+  background: white;
+  z-index: 4; }
+
+.k-navbar-drop-nordic-content {
+  display: flex; }
+
+.k-navbar-drop-touring:hover .k-underline-red {
+  animation: lineMoveUp2 .1s; }
+
+.k-navbar-drop-nordic:hover .k-underline-red {
+  animation: lineMoveUp2 .1s; }
+
+.k-underline-red {
+  display: none;
+  width: 100%;
+  height: 2px;
+  background: #CB1F3E;
+  position: relative;
+  animation-name: lineMoveUp;
+  animation-duration: .1s;
+  top: 2px; }
+
+.k-underline {
+  display: none;
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: relative;
+  animation-name: lineMoveUp;
+  animation-duration: .1s;
+  top: 2px; }
+
+@keyframes lineMoveUp {
+  from {
+    top: 5px;
+    opacity: .2; }
+  to {
+    top: 2px;
+    opacity: 1; } }
+
+@keyframes lineMoveUp2 {
+  from {
+    top: 5px;
+    opacity: .2; }
+  to {
+    top: 2px;
+    opacity: 1; } }
+
+.k-navbar-button-kids {
+  display: flex;
+  flex-direction: column;
+  margin-top: 56px; }
+
+.k-navbar-image {
+  position: relative;
+  animation-name: none;
+  animation-duration: .3s;
+  animation-fill-mode: forwards; }
+
+@keyframes imageMove {
+  from {
+    bottom: 0px; }
+  to {
+    bottom: 3px; } }
+
+@media (min-width: 900px) {
+  .nav-atomic {
+    display: flex; }
+  .k-navbar-menu {
+    display: flex; }
+  .navbar-right {
+    width: 600px;
+    padding-right: 15px;
+    align-items: center;
+    display: flex; }
+  .navbar {
+    background-color: #EB2449; }
+  .fa-bars {
+    display: none; }
+  .navbar-button {
+    display: flex; }
+  .navbar-button-kids {
+    display: flex; } }

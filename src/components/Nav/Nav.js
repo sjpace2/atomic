@@ -3,6 +3,7 @@ import justAtomic from './../../images/just atomic.png';
 import justLogo from './../../images/just logo.png';
 import Men from './Men/Men';
 import Women from './Women/Women';
+import Kids from './Kids/Kids';
 
 class Nav extends Component {
 
@@ -21,7 +22,7 @@ class Nav extends Component {
                 <Women/>
             </div>
             <div className='navbar-button'>
-                Kids
+                <Kids/>
             </div>
             <div className='navbar-button'>
                 Athletes
